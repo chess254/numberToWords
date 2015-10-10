@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> num to word </title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div>converts input number to words</div>
+        <script type="text/javascript">
+            var convert = [
+            "zero",
+            "one",
+            "two",
+            "three",
+            "four",
+            "five",
+            "six",
+            "seven",
+            "eight",
+            "nine"
+            ];
+
+        function num_to_words(number) {
+            str = number.toString();
+            arr = str.split(); 
+            alert(str);
+            for ( i=0;i<str.length;i++ ) {
+                document.write(convert[str[i]] + " ");
+        
+            };
+        };
+    
+        num_to_words(prompt("enter number to convert..."));
+        </script>
+    </body>
+</html>
